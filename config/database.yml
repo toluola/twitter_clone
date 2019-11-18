@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: twitter_clone
+  pool: 5
+  username: andela
+  password:
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: twitter_clone_test
+  pool: 5
+  username: andela
+  password:
+  timeout: 5000
+
+production:
+  # <<: *default
+  # database: db/production.sqlite3
