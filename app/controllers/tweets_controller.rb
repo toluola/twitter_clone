@@ -6,7 +6,7 @@ class TweetsController < ApplicationController
   # GET /tweets.json
   def index
     @tweets = Tweet.all.order("created_at DESC")
-    @tweet = Tweet.new
+    @tweet = current_user.tweets.build
   end
 
   # GET /tweets/1
