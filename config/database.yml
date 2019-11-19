@@ -17,5 +17,4 @@ test:
   timeout: 5000
 
 production:
-  # <<: *default
-  # database: db/production.sqlite3
+  url: <%= ENV['DATABASE_URL'] %>
